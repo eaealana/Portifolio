@@ -249,7 +249,7 @@ nav.show div.close {
 
 /* CARDS - PROJECTS */
 .cards.grid {
-  gap: 2rem 0;
+  gap: 3rem 0;
   justify-content: center;
 
   margin-bottom: 9rem;
@@ -309,7 +309,7 @@ nav.show div.close {
 }
 
 /* MEDIA */
-@media (min-width: 600px) {
+@media (min-width: 600px){
 
 /* HEADER - NAV */  
   nav .menu {
@@ -333,19 +333,19 @@ nav.show div.close {
 
 /* HOME */
   .my-picture {
-    margin-left: 4rem;
+    margin-left: 2rem;
   }
 
   .text {
-    padding: 4rem 0 0 2rem;
+    width: auto;
   }
 
   .text .title-two {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   
   .text p {
-    font: 500 1rem 'DM Sans', sans-serif;
+    font: 500 0.8rem 'DM Sans', sans-serif;
     letter-spacing: 1px;
     line-height: 1.5rem;
     text-align: left;
@@ -356,15 +356,8 @@ nav.show div.close {
   }
 
 /* PROJECTS / CARDS */ 
-  .cards.grid {
-    grid-auto-flow: column;
-    gap: 2rem 1rem;
-  }
-
   .card {
     padding: 2rem 0;
-    margin-left: 3rem;
-
     width: 23rem;
     height: 20rem;
   }
@@ -379,7 +372,68 @@ nav.show div.close {
   }
 }
 
-@media (width: 900px) {
-/* HOME */  
+@media (min-width: 800px) {
 
+  /* HOME */  
+  .text {
+    width: auto;
+    margin-top: 1rem;
+  }
+
+  .text .title-two {
+    font: 600 1.5rem 'Poppins';
+  }
+
+  .text p {
+    font: 500 0.8rem 'Poppins';
+    line-height: 1.5rem;
+  }
+
+  /* CARDS / PROJECTS */
+  .cards.grid {
+    grid-auto-flow: column; 
+    gap: 1rem 2rem;
+  }  
+
+  .card {
+    padding: 0.8rem;
+    width: 16rem;
+    height: 17rem;
+    align-items: center;
+  }
+
+  .card img {
+    width: 10rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  
+  /* HOME */
+  .my-picture {
+    margin-left: 7rem;
+  }  
+
+  .text {
+    margin-left: 20rem;
+    margin-top: 3rem;
+  }
+
+  /* CARDS / PROJECTS */
+  .cards.grid {
+    gap: 0 3rem;
+  }
+
+  .card {
+    width: 20rem;
+    height: 20rem;
+
+    padding: 0.8rem;
+  }  
+
+  .card img {
+    width: 15rem;
+    height: 15rem;
+  }
 }
