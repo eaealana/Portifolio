@@ -237,13 +237,13 @@ nav.show div.close {
   letter-spacing: 1px;
   text-align: left;
 
-  width: 13rem;
+  width: auto;
   padding-top: 0.8rem;
 }
 
 .text {
   position: relative;
-  margin-left: 15rem;
+  margin-left: 13rem;
   padding-top: 2rem;
 }
 
@@ -331,7 +331,7 @@ nav.show div.close {
   }
 
 
-/* HOME */
+/* HOME */  
   .my-picture {
     margin-left: 2rem;
   }
@@ -427,13 +427,11 @@ nav.show div.close {
 
   .card {
     width: 20rem;
-    height: 20rem;
-
-    padding: 0.8rem;
+    height: 22rem;
   }  
 
   .card img {
-    width: 15rem;
-    height: 15rem;
+    width: 17rem;
+    height: 17rem;
   }
 }
