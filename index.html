@@ -11,77 +11,122 @@
   <link href="assets/font/style.css" type="text/css" rel="stylesheet">
 
   <link href="assets/icons/style.css" rel="stylesheet" type="text/css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
   <title>Portfólio - Alana </title>
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!----- HEADER ------>
   <header id="header">
     <nav class="container">
-      <a class="logo" href="#">Alana <spam>Ribeiro</spam></a>
-      <div class="menu">
-        <ul class="grid">
-          <li><a class="title" href="#home">Inicío</a></li>
-          <li><a class="title" href="#projects">Projetos</a></li>
-          <li><a class="title" href="#contact">Contato</a></li>
-        </ul>
+      <a class="logo" href="#">Portfólio</a>
+      <div class="rightHeader">
+        <a class="titleLink" href="#aboutMe">Sobre mim</a></li>
+        <a class="titleLink" href="#projects">Projetos</a></li>
       </div>
-
-      <div class="toggle iconmenu"><img src="assets/menu.png"></div>
-      <div class="toggle close"><img src="assets/close.png"></div>
     </nav>
   </header>
 
-  <!-- HOME -->
+  <!---- HOME ----->
   <section id="home">
     <div class="home">
-      <img class="my-picture" src="assets/image4.jpeg">
+      <h1 class="title">Alana Ribeiro :)</h1>
+      <legend>Desenvolvedora Front-end | Javascript</legend>
+    </div>
 
+    <nav class="linkHome">
+      <div class="downloadCv">
+        <a href="./assets/Alana  Ribeiro - currículo.pdf" title="Baixar currículo - Alana"
+          download="Alana Ribeiro - Currículo" class="link buttonDownloadCv">Download CV</a>
+      </div>
+      <div class="pleaseContact">
+        <a href="https://api.whatsapp.com/send?phone=+5512981182732" title="Entre em contato via Whatszapp"
+          target="_blank" class="link buttonPleaseContact">Entre em contato</a>
+      </div>
+    </nav>
+  </section>
+  <div class="divider"></div>
+
+  <!----- ABOUT ME AND CONTACTS ------>
+  <section id="aboutMe">
+    <div class="about">
       <div class="text">
-        <h3 class="title-two">My name is Alana Ribeiro</h3>
+        <h1 class="title">Sobre <span>mim</span></h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           est
           laborum.</p>
       </div>
     </div>
   </section>
+  <!-- contacts-->
+  <section id="contact">
+    <div class="contacts">
+      <table>
+        <tr>
+          <td>
+            <div class="linksContacts">
+              <a href="https://www.instagram.com/iaae_alana/" target="_blank"><i class="icon-instagram"></i></a>
+              <h1>Instagram</h1>
+              <p>@iaae_alana</p>
+            </div>
+          </td>
+          <td>
+            <div class="linksContacts">
+              <a href="https://is.gd/alanaribeiro" target="_blank"><i class="fi fi-rr-envelope"></i></a>
+              <h1>E-mail</h1>
+              <p>ribeiroalana2005@gmail.com</p>
+            </div>
+          </td>
+        </tr>
 
-  <!-- PROJECTS / CARDS  -->
+        <tr>
+          <td>
+            <div class="linksContacts">
+              <a href="https://api.whatsapp.com/send?phone=+5512981182732" target="_blank"><i
+                  class="icon-whatsapp"></i></a>
+              <h1>Whatsapp</h1>
+              <p>(12) 98118-2732</p>
+            </div>
+          </td>
+          <td>
+            <div class="linksContacts">
+              <a href="https://www.linkedin.com/in/eae-alana/" target="_blank"><i class="icon-linkedin"></i></a>
+              <h1>Linkedin</h1>
+              <p>Eae_alana</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <div class="divider-2"></div>
+
+  <!---- PROJECTS / CARDS  ----->
   <section id="projects">
+    <h1 class="title">Projetos</h1>
     <div class="cards grid">
       <div class="card login">
-        <a href="https://eaealana.github.io/Login-Interface/" target="_blank"><img src="assets/login.png"
-            alt="login interface"></a>
+        <a href="https://eaealana.github.io/Camp-in/" target="_blank"> <video src="./assets/projects/video-camp-in.mp4" autoplay muted loop ></video> </a>
         <figure>Project with HTML and CSS with responsive</figure>
       </div>
 
       <div class="card">
-        <a href="https://eaealana.github.io/BeautySalon/#" target="_blank"><img src="assets/beautysalon.png"
-            alt="beauty salon"></a>
+        <a href="https://eaealana.github.io/BeautySalon/#" target="_blank"><video src="./assets/projects/video-camp-in.mp4" autoplay muted loop ></video></a>
         <figure>Project with HTML, CSS and JS with responsive</figure>
       </div>
 
       <div class="card">
-        <a href="https://eaealana.github.io/Clone_Spotify/" target="_blank"><img src="assets/spotify.png"
-            alt="spotify"></a>
+        <a href="https://eaealana.github.io/Clone_Spotify/" target="_blank"><video src="./assets/projects/video-camp-in.mp4" autoplay muted loop ></video></a>
         <figure>Project with HTML and CSS </figure>
       </div>
     </div>
   </section>
 
-  <!-- CONTACTS -->
-  <footer id="contact">
-    <div class="contacts">
-      <a href="https://www.instagram.com/iaae_alana/" target="_blank"><i class="icon-instagram"></i></a>
-      <a href="https://www.facebook.com/alana.ribeiro.9235/" target="_blank"><i class="icon-facebook"></i></a>
-      <a href="https://api.whatsapp.com/send?phone=+5512981182732" target="_blank"><i class="icon-whatsapp"></i></a>
-      <a href="https://www.linkedin.com/in/eae-alana/" target="_blank"><i class="icon-linkedin"></i></a>
-    </div>
-  </footer>
+
 
   <!-- SCRIPT -->
   <script src="js.js"></script>

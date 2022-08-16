@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500;1,700&display=swap');
-/* font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
 
 * {
   margin: 0;
@@ -12,426 +10,1319 @@ font-family: 'Roboto', sans-serif; */
 
 html {
   scroll-behavior: smooth;
+  background: var(--background-color);
+  color: var(--font-color);
 }
 
-body {
-  background: #f9f9f9;
+span {
+  color: var(--base-color);
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, hsla(268, 78%, 52%, 1) 0%, hsla(0, 0%, 13%, 1) 100%);
+}
+
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(90deg, hsla(0, 0%, 13%, 1) 0%, hsla(268, 78%, 52%, 1) 100%);
+}
+
+.home,
+.linkHome,
+#aboutMe,
+#contact,
+#projects {
+  margin-left: 2rem;
 }
 
 :root {
-  --black-color: #222222;
-  --background-color: #FE0E99;
-  --base-color: #FFA7A7;
-  --purp: #5607AF;
-}
-
-.grid {
-  display: grid;
-  gap: 2rem;
+  --font-color: #FFFF;
+  --background-color: #212121;
+  --base-color: #7f26e4;
+  --purp: #853adb;
 }
 
 /* TITLE AND LOGO */
 .title {
-  font: 500 2rem 'Poppins', sans-serif;
-  color: var(--black-color);
-
+  font: 500 1.5rem 'Poppins', sans-serif;
+  color: var(--font-color);
+  letter-spacing: 1px;
   margin-bottom: 1rem;
 }
 
+.titleLink {
+  font: 500 1rem 'Poppins', sans-serif;
+  font-style: italic;
+  color: var(--font-color);
+  margin: 0 0.3rem;
+  transition: color 0.5s;
+}
+
+.titleLink:hover {
+  color: gray;
+}
+
+.titleLink:first-child {
+  border-right: 1px solid gray;
+  padding-right: 0.8rem;
+}
+
 .logo {
-  font: 500 1.5rem 'Poppins';
-  color: var(--black-color);
+  font: 700 1.5rem 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  color: var(--font-color);
+  margin-left: 1rem;
+
+  transition: color 0.7s;
 }
 
-.logo spam {
-  color: var(--background-color);
-}
-
-/* HEADER */
+/*----- HEADER -----*/
 #header {
   display: flex;
   position: fixed;
   width: 100%;
+  height: 4rem;
+  padding: 1rem 0;
   top: 0;
   left: 0;
   z-index: 100;
 
-  background: #F9F9F9;
-  border-bottom: 1px solid #E4E4E4;
+  border-bottom: 1px solid #333333;
 }
 
 #header.scroll {
-  background: #FFFFFF;
+  margin-bottom: 5rem;
+  background: #333333;
   transition: background 0.4s;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(231, 226, 226, 0.1);
 }
 
-nav {
-  width: 83%;
-  height: 4.5rem;
-  margin: 0 auto;
-  display: flex;
-
-  align-items: center;
-  justify-content: space-between;
+.rightHeader {
+  display: inline-block;
+  margin-left: 2.1rem;
 }
 
-/* MENU  */
-nav ul li {
-  text-align: center;
-  font: 500 1rem 'Poppins';
-}
-
-nav ul li a{
-  transition: color 0.4s;
-  position: relative;
-}
-
-nav ul li a:hover {
-  color: var(--base-color);
-}
-
-nav ul li a::after{
-  content: "";
-  width: 0%;
-  height: 2px;
-
-  position: absolute;
-  left: 0;
-  bottom: -1.5rem;
-
-  background: var(--base-color);
-
-  transition: width 0.4s;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-}
-
-nav .menu {
-  opacity: 0;
-  visibility: hidden;
-  top: -20rem;
-  transition: 0.3s;
-}
-
-nav .menu ul{
-  display: none;
-}
-
-/* SHOW MENU */
-nav.show .menu {
-  opacity: 1;
-  visibility: visible;
-
-  background: #F9F9F9;
-
-  height: 100vh;
-  width: 100vw;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  display: grid;
-  place-content: center;
-}
-
-nav.show .menu ul{
-  display: grid;
-}
-
-nav.show ul.grid {
-  gap: 4rem;
-}
-
-/* TOGGLE MENU */
-.toggle {
-  color: var(--base-color);
-  font-size: 1.5rem;
-  cursor: pointer;
-
-  padding-top: 1rem;
-}
-
-.toggle img {
-  width: 1.8rem;
-  height: 1.8rem;
-}
-
-nav .close {
-  visibility: hidden;
-  opacity: 0;
-
-  position: absolute;
-  top: -1.5rem;
-  right: 1.5rem;
-
-  transition: 0.2s;
-}
-
-nav.show div.close {
-  visibility: visible;
-  opacity: 1;
-  top: 1.5rem;
-}
-
-/* HOME  */
+/*---- HOME -----*/
 #home {
-  height: 60vh;
+  margin: 10rem 0 6rem 0;
 }
 
-.home {
-  background: #d1cccc;
-  background: linear-gradient(to right bottom, rgba(221, 219, 219, 0.7), rgba(255, 255, 255, 2.3));
+.home h1 {
+  width: 12rem;
+  padding: 0.5rem;
   border-radius: 3px;
-  border: 1px solid #F9F9F9;
-
-  margin-top: 11rem;
-
-  height: 20rem;
+  animation: mymove 5s infinite;
 }
 
-.my-picture {
-  width: auto;
-  height: 18rem;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  position: absolute;
+@keyframes mymove {
+  0% {
+    top: 0px;
+    left: 0px;
+    background: #3b234a;
+    width: 14rem;
+    color: #fff;
+  }
 
-  border-radius: 5px;
-  border: 1px solid #eceaea;
+  25% {
+    top: 0px;
+    left: 100px;
+    background: #523961;
+    width: 20rem;
+    color: #fff;
+  }
+
+  50% {
+    top: 0;
+    left: 200px;
+    background: #8e6d86;
+    width: 20rem;
+    color: rgb(37, 37, 37);
+  }
+
+  75% {
+    top: 0;
+    left: 200px;
+    background: #baafc4;
+    width: 20rem;
+    color: rgb(22, 22, 22);
+  }
+
+  100% {
+    top: 0px;
+    left: 200px;
+    background: #c3bbc9;
+    width: 14rem;
+    color: #000;
+  }
 }
 
-.title-two {
-  font: 500 1rem 'Poppins';
-
-  transition:  0.4s;
-  position: relative;
-}
-
-.title-two::before {  
-  transform: scaleX(0);
-  transform-origin: bottom right;
-}
-
-.title-two:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.title-two::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  inset: 0 0 0 0;
-  background: var(--background-color);
-  z-index: -1;
-  transition: transform 0.7s ease;
-}
-
-.text p {
-  font: 500 0.8rem 'DM Sans', sans-serif;
+.home legend {
+  font: 500 0.9rem 'DM Sans', sans-serif;
   letter-spacing: 1px;
-  text-align: left;
+  color: #d4d3d3;
+  padding-top: 0.4rem;
+}
 
+.linkHome {
+  display: flex;
+  margin-top: 2.7rem;
+}
+
+.link {
   width: auto;
-  padding-top: 0.8rem;
+  height: auto;
+  padding: 0.7rem 1.7rem;
+  display: inline-block;
+  border-radius: 7px;
+  outline: none;
+  color: #FFF;
+  font: 500 0.8rem 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.buttonDownloadCv {
+  background: transparent;
+  border: 1px solid #7f26e4;
+  margin-right: 0.5rem;
+
+  transition: background 0.8s;
+}
+
+.buttonDownloadCv:hover {
+  background: #7f26e4;
+}
+
+.buttonPleaseContact {
+  background: #333333;
+  height: 2.7rem;
+  padding-top: 13px;
+
+  transition: background 0.8s;
+}
+
+.buttonPleaseContact:hover {
+  background: transparent;
+
+  border: 1px solid #333333;
+}
+
+/* ABOUT ME  */
+#aboutMe {
+  text-align: left;
+  margin-top: 3rem;
 }
 
 .text {
-  position: relative;
-  margin-left: 13rem;
-  padding-top: 2rem;
+  width: 22rem;
+}
+
+.text p {
+  font: 400 0.8rem 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* CONTACTS */
+#contact {
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.contacts {
+  text-align: center;
+}
+
+table tr td {
+  padding: 1.5rem;
+}
+
+.linksContacts h1 {
+  font: 700 0.8rem 'Poppins', sans-serif;
+  margin: 0.2rem 0;
+}
+
+.linksContacts p {
+  font: 500 0.7rem 'Poppins', sans-serif;
+  color: #9c9999;
+}
+
+.contacts i {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 100px;
+
+  display: inline-block;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+
+  animation: myIcons 3s infinite;
+}
+
+@keyframes myIcons {
+  0% {
+    color: var(--base-color);
+    border-color: #7f26e4;
+  }
+
+  25% {
+    transform: translateY(-12px)
+  }
 }
 
 /* CARDS - PROJECTS */
-.cards.grid {
-  gap: 3rem 0;
-  justify-content: center;
+#projects {
+  margin-top: 3rem;
+}
 
-  margin-bottom: 9rem;
+.cards {
+  margin: 0 0 3rem 1.8rem;
 }
 
 .card {
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: 0.25rem solid var(--black-color);
-  border-radius: 0.25rem 0.25rem 0 0 ;
+  background: #383535;
+  box-shadow: 0px 0px 12px rgba(226, 222, 222, 0.08);
+  border-bottom: 0.25rem solid #FFF;
+  border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
+  margin: 1.3rem 0;
 
   padding: 1rem 0;
-  width: 20rem;
+  width: 18rem;
 
   transition: 0.7s;
   cursor: pointer;
 }
 
-.card img {
-  width: auto;
-  height: 10rem;
+.card video {
+  width: 17rem;
 }
 
 .card figure {
   font: 500 0.7rem 'Poppins';
-  padding-top: 0.8rem;
+  padding: 0.8rem 0 0 1.4rem;
+  text-align: left;
 }
 
 .card:hover {
   transform: scale(1.1);
+  border-color: var(--base-color);
 }
 
-/* CONTACTS */
-#contact {
-  height: 4rem;
-  float: bottom;
+/*------ MIN WIDTH 450PX -----*/
+@media (min-width: 450px) {
 
-  text-align: center;
-  background: var(--background-color);
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 6rem;
+  }
 
+  /*--- home = keyframes ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 14rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 23rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 23rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 23rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 14rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me -----*/
+  .text {
+    width: 25rem;
+  }
+
+  /*--- cards and contacts ---*/
+  .card,
+  .contacts {
+    margin-left: 3rem;
+  }
 }
 
-.contacts i {
-  font-size: 1.7rem;
-  font-weight: bold;
-  color: #000000;
+/*------ MIN WIDTH 470PX -----*/
+@media (min-width: 470px) {
 
-  display: inline-block;
-  padding-left: 1.3rem;
-  padding-top: 1rem;
+  .home,
+  .linkHome,
+  #aboutMe,
+  #contact,
+  #projects {
+    margin-left: 2.5rem;
+  }
 
-  transition: all 0.6s;
+  .title {
+    font-size: 1.7rem;
+  }
+
+  /*-- header --*/
+  .rightHeader {
+    margin-left: 7rem
+  }
 }
 
-.contacts i:hover{
-  transform: translateY(-8px)
+/*------ MIN WIDTH 500PX -----*/
+@media (min-width: 500px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 10rem;
+  }
+
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 27rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 27rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 27rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- cards and contacts ---*/
+  .card {
+    margin-left: 3rem;
+  }
+
+  .contacts {
+    margin-left: 3.5rem;
+  }
 }
 
-/* MEDIA */
-@media (min-width: 600px){
+/*------ MIN WIDTH 550PX -----*/
+@media (min-width: 550px) {
 
-/* HEADER - NAV */  
-  nav .menu {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  nav .menu ul {
-    display: flex;
-    gap: 2rem;
+  .home,
+  .linkHome,
+  #aboutMe,
+  #contact,
+  #projects {
+    margin-left: 3rem;
   }
 
-  nav .menu ul li a.title {
-    font:500 1rem var(--body-font);
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 12rem;
   }
 
-  nav .iconmenu {
-    display: none;
+  /*-- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 29rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 29rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 29rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
   }
 
-
-/* HOME */  
-  .my-picture {
-    margin-left: 2rem;
-  }
-
+  /*--- about me ---*/
   .text {
     width: auto;
+    margin-right: 2rem;
   }
 
-  .text .title-two {
+  /*--- contacts and cards ---*/
+  .contacts,
+  .card {
+    margin-left: 4rem;
+  }
+}
+
+/*------ MIN WIDTH 600PX -----*/
+@media (min-width: 600px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 16rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 31rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 31rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 31rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- contacts and card ---*/
+  .contacts,
+  .card {
+    margin-left: 6rem;
+  }
+}
+
+/*------ MIN WIDTH 650PX -----*/
+@media (min-width: 650px) {
+
+  .home,
+  .linkHome,
+  #aboutMe,
+  #contact,
+  #projects {
+    margin-left: 3rem;
+  }
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 19rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 34rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 34rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 34rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me ---*/
+  .contacts {
+    margin-left: 6rem;
+  }
+
+  /*--- cards ---*/
+  .card {
+    width: 23rem;
+    margin-left: 5rem;
+  }
+
+  .card video {
+    width: 22rem;
+  }
+
+  .card figure {
+    font: 500 0.8rem 'Poppins';
+    text-align: center;
+  }
+}
+
+/*------ MIN WIDTH 700PX -----*/
+@media (min-width: 700px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 22rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 39rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 39rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 39rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me ---*/
+  .contacts {
+    margin-left: 10rem;
+  }
+
+  /*--- cards ---*/
+  .card {
+    margin-left: 7rem;
+  }
+}
+
+/*------ MIN WIDTH 750PX -----*/
+@media (min-width: 750px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 24rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 42rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 42rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 42rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me ---*/
+  .contacts {
+    margin-left: 11rem;
+  }
+
+  /*-- card ---*/
+  .card {
+    margin-left: 8rem;
+  }
+}
+
+/*------ MIN WIDTH 800PX -----*/
+@media (min-width: 800px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 28rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 45rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 45rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 45rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me ---*/
+  .contacts {
+    margin-left: 12rem;
+  }
+
+  /*--- cards ---*/
+  #projects {
+    margin: 0;
+  }
+
+  #projects h1 {
+    margin: 3rem 0 2rem 3rem;
+  }
+
+  .cards {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .card {
+    width: 15rem;
+    margin: 0 10px;
+  }
+
+  .card video {
+    width: 14rem;
+  }
+}
+
+/*------ MIN WIDTH 850PX -----*/
+@media (min-width: 850px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 31rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 48rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 48rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 48rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me ---*/
+  .contacts {
+    margin-left: 15rem;
+  }
+
+  /*---- cards ----*/
+  .card {
+    width: 18rem;
+    margin: 0 10px;
+  }
+
+  .card video {
+    width: 16rem;
+  }
+}
+
+/*------ MIN WIDTH 900PX -----*/
+@media (min-width: 900px) {
+
+  .title,
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  /*--- header ---*/
+  #header {
+    height: 5rem;
+  }
+
+  .rightHeader {
+    margin-left: 33rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 51rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 51rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 51rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me ---*/
+  .contacts {
+    margin-left: 15rem;
+  }
+}
+
+/*------ MIN WIDTH 950PX -----*/
+@media (min-width: 950px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 36rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 54rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 54rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 54rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me ---*/
+  .contacts {
+    margin-left: 10rem;
+  }
+
+  table tr td {
+    padding: 2rem 4rem;
+  }
+
+  .linksContacts i {
+    font-size: 1.3rem;
+  }
+
+  .linksContacts h1,
+  .linksContacts p {
+    font-size: 0.9rem;
+  }
+}
+
+/*------ MIN WIDTH 1000PX -----*/
+@media (min-width: 1000px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 40rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 57rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 57rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 57rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me ---*/
+  .contacts {
+    margin-left: 12rem;
+  }
+
+  /*--- card ---*/
+  .card {
+    width: auto;
+    padding: 1rem 0.2rem;
+  }
+
+  .card video {
+    width: 17rem;
+  }
+}
+
+/*------ MIN WIDTH 1050PX -----*/
+@media (min-width: 1050px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 43rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 17rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 61rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 61rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 61rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 17rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me ---*/
+  .contacts {
+    margin-left: 13rem;
+  }
+
+  .card {
+    width: 30rem;
+  }
+
+  .card video {
+    width: 19rem;
+  }
+
+  .card figure {
+    font-size: 0.9rem;
+  }
+}
+
+/*------ MIN WIDTH 1100PX -----*/
+@media (min-width: 1100px) {
+  .title, .logo {
+    font-size: 1.8rem;
+  }
+
+  .titleLink {
     font-size: 1.2rem;
   }
   
+  .home,
+  .linkHome,
+  #aboutMe,
+  #contact {
+    margin: 3rem 2rem 3rem 3rem;
+  }
+
+  /*----- HEADER -----*/
+  #header {
+    padding: 1rem;
+  }
+
+  .rightHeader {
+    margin-left: 39rem;
+  }
+
+  /*---- HOME -----*/
+  .home legend {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .link {
+    padding: 0.9rem 3rem;
+    font-size: 1rem;
+  }
+
+  .buttonPleaseContact {
+    height: 3.6rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: #3b234a;
+      width: 22rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: #523961;
+      width: 64rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8e6d86;
+      width: 64rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #baafc4;
+      width: 64rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #c3bbc9;
+      width: 22rem;
+      color: #000;
+    }
+  }
+
+  /*--- about me ---*/
   .text p {
-    font: 500 0.8rem 'DM Sans', sans-serif;
+    font-size: 0.9rem;   
+  }
+
+  .contacts {
+    margin-left: 12rem;
+  }
+
+  .linksContacts i {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .linksContacts h1, 
+  .linksContacts p {
+    font-size: 1rem;
     letter-spacing: 1px;
-    line-height: 1.5rem;
-    text-align: left;
-
-    width: auto;
-    padding-top: 0.8rem;
-    margin-right: 2rem; 
   }
 
-/* PROJECTS / CARDS */ 
+  /*--- cards ---*/
+  #projects {
+    margin: 3rem 0 2rem 0;
+  }
   .card {
-    padding: 2rem 0;
-    width: 23rem;
-    height: 20rem;
+    width: 22rem;
+    margin-left: 1rem;
   }
 
-  .card img {
-    width: 20rem;
-    height: 15rem;
-  }
-
-  .card.login img {
-    width: auto;
-  }
-}
-
-@media (min-width: 800px) {
-
-  /* HOME */  
-  .text {
-    width: auto;
-    margin-top: 1rem;
-  }
-
-  .text .title-two {
-    font: 600 1.5rem 'Poppins';
-  }
-
-  .text p {
-    font: 500 0.8rem 'Poppins';
-    line-height: 1.5rem;
-  }
-
-  /* CARDS / PROJECTS */
-  .cards.grid {
-    grid-auto-flow: column; 
-    gap: 1rem 2rem;
-  }  
-
-  .card {
-    padding: 0.8rem;
-    width: 16rem;
-    height: 17rem;
-    align-items: center;
-  }
-
-  .card img {
-    width: 10rem;
-    height: 12rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  
-  /* HOME */
-  .my-picture {
-    margin-left: 7rem;
-  }  
-
-  .text {
-    margin-left: 20rem;
-    margin-top: 3rem;
-  }
-
-  /* CARDS / PROJECTS */
-  .cards.grid {
-    gap: 0 3rem;
-  }
-
-  .card {
-    width: 20rem;
-    height: 22rem;
-  }  
-
-  .card img {
-    width: 17rem;
-    height: 17rem;
+  .card video {
+    width: 19.2rem;
+    height: 10rem;
   }
 }
