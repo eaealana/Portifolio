@@ -119,7 +119,7 @@ span {
   0% {
     top: 0px;
     left: 0px;
-    background: #3b234a;
+    background: var(--base-color);
     width: 14rem;
     color: #fff;
   }
@@ -127,7 +127,7 @@ span {
   25% {
     top: 0px;
     left: 100px;
-    background: #523961;
+    background: var(--purp);
     width: 20rem;
     color: #fff;
   }
@@ -135,7 +135,7 @@ span {
   50% {
     top: 0;
     left: 200px;
-    background: #8e6d86;
+    background: #8b47da;
     width: 20rem;
     color: rgb(37, 37, 37);
   }
@@ -143,7 +143,7 @@ span {
   75% {
     top: 0;
     left: 200px;
-    background: #baafc4;
+    background: #a560f3;
     width: 20rem;
     color: rgb(22, 22, 22);
   }
@@ -151,7 +151,7 @@ span {
   100% {
     top: 0px;
     left: 200px;
-    background: #c3bbc9;
+    background: #b382ec;
     width: 14rem;
     color: #000;
   }
@@ -231,6 +231,7 @@ span {
 
 .contacts {
   text-align: center;
+  margin-left: 2rem;
 }
 
 table tr td {
@@ -255,7 +256,7 @@ table tr td {
   border-radius: 100px;
 
   display: inline-block;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   margin-bottom: 0.5rem;
 
   animation: myIcons 3s infinite;
@@ -324,7 +325,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 14rem;
       color: #fff;
     }
@@ -332,7 +333,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 23rem;
       color: #fff;
     }
@@ -340,7 +341,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 23rem;
       color: rgb(37, 37, 37);
     }
@@ -348,7 +349,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 23rem;
       color: rgb(22, 22, 22);
     }
@@ -356,7 +357,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 14rem;
       color: #000;
     }
@@ -368,9 +369,12 @@ table tr td {
   }
 
   /*--- cards and contacts ---*/
-  .card,
   .contacts {
-    margin-left: 3rem;
+    margin-left: 3.5rem;
+  }
+
+  .card {
+    margin-left: 1.4rem;
   }
 }
 
@@ -380,7 +384,6 @@ table tr td {
   .home,
   .linkHome,
   #aboutMe,
-  #contact,
   #projects {
     margin-left: 2.5rem;
   }
@@ -392,6 +395,11 @@ table tr td {
   /*-- header --*/
   .rightHeader {
     margin-left: 7rem
+  }
+
+  /*--- card ---*/
+  .card {
+    margin-left: 1rem;
   }
 }
 
@@ -407,7 +415,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -415,7 +423,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 27rem;
       color: #fff;
     }
@@ -423,7 +431,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 27rem;
       color: rgb(37, 37, 37);
     }
@@ -431,7 +439,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 27rem;
       color: rgb(22, 22, 22);
     }
@@ -439,7 +447,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -451,7 +459,7 @@ table tr td {
   }
 
   .contacts {
-    margin-left: 3.5rem;
+    margin-left: 5rem;
   }
 }
 
@@ -476,7 +484,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -484,7 +492,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 29rem;
       color: #fff;
     }
@@ -492,7 +500,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 29rem;
       color: rgb(37, 37, 37);
     }
@@ -500,7 +508,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 29rem;
       color: rgb(22, 22, 22);
     }
@@ -508,7 +516,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -540,7 +548,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -548,7 +556,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 31rem;
       color: #fff;
     }
@@ -556,7 +564,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 31rem;
       color: rgb(37, 37, 37);
     }
@@ -564,7 +572,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 31rem;
       color: rgb(22, 22, 22);
     }
@@ -572,7 +580,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -606,7 +614,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -614,7 +622,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 34rem;
       color: #fff;
     }
@@ -622,7 +630,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 34rem;
       color: rgb(37, 37, 37);
     }
@@ -630,7 +638,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 34rem;
       color: rgb(22, 22, 22);
     }
@@ -638,7 +646,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -678,7 +686,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -686,7 +694,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 39rem;
       color: #fff;
     }
@@ -694,7 +702,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 39rem;
       color: rgb(37, 37, 37);
     }
@@ -702,7 +710,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 39rem;
       color: rgb(22, 22, 22);
     }
@@ -710,7 +718,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -740,7 +748,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -748,7 +756,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 42rem;
       color: #fff;
     }
@@ -756,7 +764,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 42rem;
       color: rgb(37, 37, 37);
     }
@@ -764,7 +772,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 42rem;
       color: rgb(22, 22, 22);
     }
@@ -772,7 +780,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -802,7 +810,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -810,7 +818,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 45rem;
       color: #fff;
     }
@@ -818,7 +826,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 45rem;
       color: rgb(37, 37, 37);
     }
@@ -826,7 +834,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 45rem;
       color: rgb(22, 22, 22);
     }
@@ -834,7 +842,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -882,7 +890,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -890,7 +898,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 48rem;
       color: #fff;
     }
@@ -898,7 +906,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 48rem;
       color: rgb(37, 37, 37);
     }
@@ -906,7 +914,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 48rem;
       color: rgb(22, 22, 22);
     }
@@ -914,7 +922,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -958,7 +966,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -966,7 +974,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 51rem;
       color: #fff;
     }
@@ -974,7 +982,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 51rem;
       color: rgb(37, 37, 37);
     }
@@ -982,7 +990,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 51rem;
       color: rgb(22, 22, 22);
     }
@@ -990,7 +998,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -1015,7 +1023,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -1023,7 +1031,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 54rem;
       color: #fff;
     }
@@ -1031,7 +1039,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 54rem;
       color: rgb(37, 37, 37);
     }
@@ -1039,7 +1047,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 54rem;
       color: rgb(22, 22, 22);
     }
@@ -1047,7 +1055,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -1085,7 +1093,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -1093,7 +1101,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 57rem;
       color: #fff;
     }
@@ -1101,7 +1109,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 57rem;
       color: rgb(37, 37, 37);
     }
@@ -1109,7 +1117,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 57rem;
       color: rgb(22, 22, 22);
     }
@@ -1117,7 +1125,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -1152,7 +1160,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 17rem;
       color: #fff;
     }
@@ -1160,7 +1168,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 61rem;
       color: #fff;
     }
@@ -1168,7 +1176,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 61rem;
       color: rgb(37, 37, 37);
     }
@@ -1176,7 +1184,7 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+      background: #a560f3;
       width: 61rem;
       color: rgb(22, 22, 22);
     }
@@ -1184,7 +1192,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 17rem;
       color: #000;
     }
@@ -1210,14 +1218,16 @@ table tr td {
 
 /*------ MIN WIDTH 1100PX -----*/
 @media (min-width: 1100px) {
-  .title, .logo {
+
+  .title,
+  .logo {
     font-size: 1.8rem;
   }
 
   .titleLink {
     font-size: 1.2rem;
   }
-  
+
   .home,
   .linkHome,
   #aboutMe,
@@ -1231,7 +1241,7 @@ table tr td {
   }
 
   .rightHeader {
-    margin-left: 39rem;
+    margin-left: 42rem;
   }
 
   /*---- HOME -----*/
@@ -1254,7 +1264,7 @@ table tr td {
     0% {
       top: 0px;
       left: 0px;
-      background: #3b234a;
+      background: var(--base-color);
       width: 22rem;
       color: #fff;
     }
@@ -1262,7 +1272,7 @@ table tr td {
     25% {
       top: 0px;
       left: 100px;
-      background: #523961;
+      background: var(--purp);
       width: 64rem;
       color: #fff;
     }
@@ -1270,7 +1280,7 @@ table tr td {
     50% {
       top: 0;
       left: 200px;
-      background: #8e6d86;
+      background: #8b47da;
       width: 64rem;
       color: rgb(37, 37, 37);
     }
@@ -1278,7 +1288,9 @@ table tr td {
     75% {
       top: 0;
       left: 200px;
-      background: #baafc4;
+
+
+      background: #a560f3;
       width: 64rem;
       color: rgb(22, 22, 22);
     }
@@ -1286,7 +1298,7 @@ table tr td {
     100% {
       top: 0px;
       left: 200px;
-      background: #c3bbc9;
+      background: #b382ec;
       width: 22rem;
       color: #000;
     }
@@ -1294,7 +1306,7 @@ table tr td {
 
   /*--- about me ---*/
   .text p {
-    font-size: 0.9rem;   
+    font-size: 0.9rem;
   }
 
   .contacts {
@@ -1302,11 +1314,10 @@ table tr td {
   }
 
   .linksContacts i {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.7rem;
   }
 
-  .linksContacts h1, 
+  .linksContacts h1,
   .linksContacts p {
     font-size: 1rem;
     letter-spacing: 1px;
@@ -1316,13 +1327,340 @@ table tr td {
   #projects {
     margin: 3rem 0 2rem 0;
   }
+
   .card {
     width: 22rem;
     margin-left: 1rem;
   }
 
   .card video {
-    width: 19.2rem;
-    height: 10rem;
+    width: 19.5rem;
+    height: auto;
+  }
+}
+
+/*---- MIN WIDTH 1150PX ----*/
+@media (min-width: 1150px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 45rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: var(--base-color);
+      width: 22rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: var(--purp);
+      width: 67rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8b47da;
+      width: 67rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #a560f3;
+      width: 67rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #b382ec;
+      width: 22rem;
+      color: #000;
+    }
+  }
+
+  /*--- contact ---*/
+  .contacts {
+    margin-left: 14rem;
+  }
+
+  /*--- card ---*/
+  .card video {
+    width: 20.5rem;
+  }
+}
+
+/*--- MIN WIDTH 1200PX ---*/
+@media (min-width: 1200px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 49rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: var(--base-color);
+      width: 22rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: var(--purp);
+      width: 70rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8b47da;
+      width: 70rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #a560f3;
+      width: 70rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #b382ec;
+      width: 22rem;
+      color: #000;
+    }
+  }
+
+  /*--- contact ---*/
+  .contacts {
+    margin-left: 16rem;
+  }
+
+  /*--- card ---*/
+  .card {
+    width: 24rem;
+  }
+
+  .card video {
+    width: 21rem;
+  }
+}
+
+/*--- MIN WIDTH 1250PX ---*/
+@media (min-width: 1250px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 51rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: var(--base-color);
+      width: 22rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: var(--purp);
+      width: 72rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8b47da;
+      width: 72rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #a560f3;
+      width: 72rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #b382ec;
+      width: 22rem;
+      color: #000;
+    }
+  }
+
+  /*--- contact ---*/
+  .contacts {
+    margin-left: 18rem;
+  }
+
+  /*--- card ---*/
+  .card {
+    width: 26rem;
+  }
+
+  .card video {
+    width: 22rem;
+  }
+}
+
+/*--- MIN WIDTH 1270PX ---*/
+@media (min-width: 1270px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 53rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: var(--base-color);
+      width: 22rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: var(--purp);
+      width: 75rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8b47da;
+      width: 75rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #a560f3;
+      width: 75rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #b382ec;
+      width: 22rem;
+      color: #000;
+    }
+  }
+
+  /*--- contact ---*/
+  .contacts {
+    margin-left: 20rem;
+  }
+
+  /*--- card ---*/
+  .card {
+    width: 28rem;
+  }
+
+  .card video {
+    width: 23rem;
+  }
+}
+
+/*--- MIN WIDTH 1300PX ---*/
+@media (min-width: 1300px) {
+
+  /*--- header ---*/
+  .rightHeader {
+    margin-left: 55rem;
+  }
+
+  /*--- home ---*/
+  @keyframes mymove {
+    0% {
+      top: 0px;
+      left: 0px;
+      background: var(--base-color);
+      width: 22rem;
+      color: #fff;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+      background: var(--purp);
+      width: 77rem;
+      color: #fff;
+    }
+
+    50% {
+      top: 0;
+      left: 200px;
+      background: #8b47da;
+      width: 77rem;
+      color: rgb(37, 37, 37);
+    }
+
+    75% {
+      top: 0;
+      left: 200px;
+      background: #a560f3;
+      width: 77rem;
+      color: rgb(22, 22, 22);
+    }
+
+    100% {
+      top: 0px;
+      left: 200px;
+      background: #b382ec;
+      width: 22rem;
+      color: #000;
+    }
+  }
+
+  /*--- contact ---*/
+  .contacts {
+    margin-left: 21rem;
+  }
+
+  /*--- card ---*/
+  .card {
+    width: 29rem;
+  }
+
+  .card video {
+    width: 24rem;
   }
 }
