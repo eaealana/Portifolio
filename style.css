@@ -196,7 +196,6 @@ span {
 
 .buttonPleaseContact {
   background: #333333;
-  height: 2.7rem;
   padding-top: 13px;
 
   transition: background 0.8s;
@@ -669,7 +668,6 @@ table tr td {
 
   .card figure {
     font: 500 0.8rem 'Poppins';
-    text-align: center;
   }
 }
 
@@ -1253,10 +1251,6 @@ table tr td {
   .link {
     padding: 0.9rem 3rem;
     font-size: 1rem;
-  }
-
-  .buttonPleaseContact {
-    height: 3.6rem;
   }
 
   /*--- home ---*/
