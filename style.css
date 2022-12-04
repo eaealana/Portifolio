@@ -20,20 +20,16 @@ span {
 
 .divider {
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    hsla(268, 78%, 52%, 1) 0%,
-    hsla(0, 0%, 13%, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      hsla(268, 78%, 52%, 1) 0%,
+      hsla(0, 0%, 13%, 1) 100%);
 }
 
 .divider-2 {
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    hsla(0, 0%, 13%, 1) 0%,
-    hsla(268, 78%, 52%, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      hsla(0, 0%, 13%, 1) 0%,
+      hsla(268, 78%, 52%, 1) 100%);
 }
 
 :root {
@@ -283,13 +279,13 @@ span {
   padding: 1rem;
 }
 
-.images img{
-  width: 5rem;
-  padding: 0 1rem;
+.images img {
+  width: 4rem;
+  height: 3rem;
+  padding: 0 0.5rem;
 }
 
 .images img:hover {
-  border-radius: 10px;
   border-bottom: 1px solid #7f26e4;
 }
 
@@ -312,6 +308,7 @@ span {
   text-align: center;
   margin: 1.3rem 0.5rem;
   width: 18rem;
+  height: 12rem;
 
   background: #383535;
   box-shadow: 0px 0px 12px rgba(226, 222, 222, 0.08);
@@ -324,6 +321,7 @@ span {
 
 .card video {
   width: 18rem;
+  align-self: top;
 }
 
 .card figure {
@@ -334,6 +332,10 @@ span {
   font: 500 0.7rem "Poppins";
 }
 
+.figure {
+  margin-top: 0.8rem;
+}
+
 .card:hover {
   transform: scale(1.1);
   border-color: var(--base-color);
@@ -341,6 +343,7 @@ span {
 
 /*!------ MIN WIDTH 450PX -----*/
 @media (min-width: 450px) {
+
   /*?--- home = keyframes ---*/
   @keyframes mymove {
     0% {
@@ -387,6 +390,7 @@ span {
 
 /*------ MIN WIDTH 550PX -----*/
 @media (min-width: 550px) {
+
   /*-- home ---*/
   @keyframes mymove {
     0% {
@@ -654,6 +658,14 @@ span {
       color: #000;
     }
   }
+
+  .images {
+    width: auto;
+  }
+
+  .images img {
+    width: auto;
+  }
 }
 
 /*------ MIN WIDTH 850PX -----*/
@@ -700,11 +712,11 @@ span {
     }
   }
 
-  .images img{
+  .images img {
     width: 7rem;
     padding: 0 1rem;
   }
-  
+
 }
 
 /*------ MIN WIDTH 900PX -----*/
@@ -749,19 +761,6 @@ span {
       width: 17rem;
       color: #000;
     }
-  }
-
-  .cards {
-    flex-direction: row;
-  }
-
-  .card {
-    width: 17rem;
-    height: 13rem;
-  }
-
-  .card video {
-    width: 17rem;
   }
 }
 
@@ -854,18 +853,9 @@ span {
     }
   }
 
-  .card {
-    width: 25rem;
-    height: 15rem;
-  }
-
-  .card video {
-    width: 25rem;
-    height: 11rem;
-  }
-
-  .card figure {
-    padding: 0.8rem 0;
+  .cards {
+    flex-direction: row;
+    margin: 0 2rem;
   }
 }
 
@@ -911,6 +901,15 @@ span {
       width: 17rem;
       color: #000;
     }
+  }
+
+  .card {
+    margin: 1rem;
+    width: 19rem;
+  }
+
+  .card video {
+    width: 19rem;
   }
 }
 
@@ -1002,6 +1001,17 @@ span {
       width: 22rem;
       color: #000;
     }
+  }
+
+  
+  .card {
+    margin: 1rem;
+    width: 21rem;
+    height: 13rem;
+  }
+
+  .card video {
+    width: 21rem;
   }
 }
 
