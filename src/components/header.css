@@ -1,0 +1,69 @@
+/* //! HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    border-bottom: 1px solid #333333;
+}
+
+.section {
+    padding: calc(2rem + var(--header-height)) 0;
+    margin-left: 1rem;
+}
+
+.activeCor {
+    background: #333;
+    box-shadow: 0px 0px 10px rgba(231, 226, 226, 0.1);
+
+    transition: all ease .3s;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    margin: 0.4rem;
+}
+
+.logo {
+    margin-left: 0.8rem;
+
+    font: 700 1.5rem "Poppins", sans-serif;
+    letter-spacing: 2px;
+    color: var(--font-color);
+  
+    transition: color 0.7s;
+} 
+
+.links {
+    margin: 0.3rem;
+
+    font: 600 1rem "Poppins", sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: var(--font-color);
+    cursor: pointer;
+
+    transition: color 0.7s;
+}
+
+.links:hover {
+    color: gray;
+}
+
+.links:first-child {
+    border-right: 1px solid gray;
+    padding-right: 0.8rem;
+}
+
+.links:nth-child(2) {
+    border-right: 1px solid gray;
+    padding-right: 0.8rem;
+}
