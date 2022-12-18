@@ -54,7 +54,7 @@ export const Main = styled.div`
 
 //! HOME
 export const Home = styled.div`
-  margin: 6rem 0 3rem 1rem;
+  margin: 6rem 0 3rem 0;
 `;
 
 export const NameHome = styled.h1`
@@ -71,31 +71,31 @@ export const NameHome = styled.h1`
   @keyframes mymove {
     0% {
       background: var(--base-color);
-      width: 14rem;
+      width: 13rem;
       color: #fff;
     }
 
     25% {
       background: var(--purp);
-      width: 21rem;
+      width: 19rem;
       color: #fff;
     }
 
     50% {
       background: #8b47da;
-      width: 23rem;
+      width: 20rem;
       color: rgb(37, 37, 37);
     }
 
     75% {
       background: #a560f3;
-      width: 23rem;
+      width: 20rem;
       color: rgb(22, 22, 22);
     }
 
     100% {
       background: #b382ec;
-      width: 14rem;
+      width: 13rem;
       color: #000;
     }
   }
@@ -218,9 +218,8 @@ export const Text = styled.div`
 //! CONTACTS
 export const Contacts = styled.div`
   display: flex;
+  margin-top: 1rem;
   justify-content: center;
-  align-items: center;
-  margin: 2rem 0 0 1rem;
 `;
 
 export const Table = styled.table`

@@ -221,7 +221,7 @@ const App = () => {
 
             <Card>
               <LinkCard
-                href="https://eaealana.github.io/Convert-Money/"
+                href="#"
                 target="_blank"
               >
                 <video src={DevClub} autoPlay loop muted />
